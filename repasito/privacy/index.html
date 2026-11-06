@@ -15,7 +15,7 @@
     </nav>
 
     <h1>Privacy Policy</h1>
-    <p class="lede"><strong>Effective November 1, 2026.</strong> RePasito keeps your recordings and practice media on your device while using limited service data for purchases, product analytics, and optional feedback.</p>
+    <p class="lede"><strong>Effective November 6, 2026.</strong> This policy covers RePasito for iPhone and RePasito for Android. RePasito keeps your recordings and practice media on your device while using limited service data for purchases, product analytics, and optional feedback.</p>
 
     <section>
       <h2>At a glance</h2>
@@ -24,46 +24,58 @@
 
     <section>
       <h2>Camera, microphone, and media</h2>
-      <p>With your permission, RePasito uses the camera and microphone to record your takes. You may also choose an audio file, a reference video, or an Apple Music track for practice. Recordings, imported media, practice settings, and search history are processed and stored locally on your device. They are not uploaded to us.</p>
-      <p>When you save a finished take, RePasito adds it to your Photos library. It remains there until you delete it.</p>
+      <p>With your permission, RePasito uses the camera and microphone to record your takes. You may also choose an audio file, a reference video, a YouTube video, or, on iPhone, an Apple Music track for practice. Recordings, imported media, practice settings, and recent searches are processed and stored locally on your device. They are not uploaded to us.</p>
+      <p>When you save a finished take, RePasito adds it to your Photos library on iPhone, or to the Movies/RePasito folder of your device’s gallery on Android. It remains there until you delete it.</p>
+    </section>
+
+    <section>
+      <h2>YouTube</h2>
+      <p>RePasito uses YouTube API Services to let you search for, select, and play YouTube videos. When you search, your search terms are sent to YouTube to return results. When you play a video, it is streamed in YouTube’s embedded player, which is operated by Google and may collect information, including through cookies or similar technologies, under Google’s privacy policy. RePasito does not sign you in to YouTube, does not access your YouTube or Google account, and does not download or record YouTube audio or video. Takes recorded with a YouTube video contain only your camera and microphone recording. Recent searches are stored only on your device, and you can clear them on the search screen.</p>
+      <p>By using the YouTube features in RePasito, you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google’s handling of your information is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
     </section>
 
     <section>
       <h2>Product analytics</h2>
       <p>RePasito uses Firebase Analytics to understand broad product usage and improve the app. Analytics may collect a random app-instance identifier, device and operating-system information, app version, approximate location derived from network information, and product-interaction events such as starting a practice, completing a capture, opening the paywall, completing a purchase flow, saving a take, or using the feedback feature.</p>
-      <p>Analytics events do not include song titles, imported media identifiers, recordings, gesture frames, feedback text, your name, email address, or payment details. Advertising personalization signals are disabled, and RePasito does not link the advertising-support framework.</p>
+      <p>Analytics events do not include song titles, video titles or links, imported media identifiers, recordings, gesture frames, feedback text, your name, email address, or payment details. Advertising personalization signals are disabled. On iPhone, RePasito does not link the advertising-support framework. On Android, RePasito does not use the advertising ID, and advertising storage, advertising user data, and ad personalization consent are denied.</p>
     </section>
 
     <section>
-      <h2>Acquisition and purchase analytics</h2>
-      <p>To understand how people discover RePasito and how our Apple Ads campaigns perform, we collect a random installation identifier, app and iOS versions, App Store country, and the time we first observe an installation. We associate available Apple Ads attribution, such as campaign, ad group, keyword, ad, and interaction information, with App Store purchase, renewal, refund, and auto-renewal information for internal analysis. Firebase anonymous authentication and device attestation protect these requests. We do not collect the advertising identifier (IDFA), payment-card details, or Apple Account credentials, and do not use these records to track you across other companies’ apps or websites.</p>
+      <h2>Acquisition and purchase analytics (iPhone)</h2>
+      <p>This section applies to RePasito for iPhone. RePasito for Android does not collect install attribution or advertising-campaign data. To understand how people discover RePasito and how our Apple Ads campaigns perform, we collect a random installation identifier, app and iOS versions, App Store country, and the time we first observe an installation. We associate available Apple Ads attribution, such as campaign, ad group, keyword, ad, and interaction information, with App Store purchase, renewal, refund, and auto-renewal information for internal analysis. Firebase anonymous authentication and device attestation protect these requests. We do not collect the advertising identifier (IDFA), payment-card details, or Apple Account credentials, and do not use these records to track you across other companies’ apps or websites.</p>
       <p>We keep acquisition records for 24 months after first-observed launch, extended by associated purchases, subscription expiries, or refunds. Each purchase and related event is kept for 24 months after its latest relevant purchase, expiry, refund, or subscription activity. Expired records stop appearing in reports and are removed by routine cleanup, normally within 24 hours. Operational status logs are retained for 30 days; short-lived attribution abuse-limit records expire after two days.</p>
       <p>To request deletion of these acquisition and purchase analytics, open Settings → Privacy data request and email <a href="mailto:leontopodi@proton.me">leontopodi@proton.me</a> with the private installation reference shown there. We use that reference and associated purchase records to locate and honor your request. We retain minimal hashed technical markers separately from analytics to prevent deleted history from being imported again. Deletion does not cancel an App Store subscription or delete your recordings. Deleting the app does not itself delete server-side records or stop subscription notifications from Apple; its Keychain identifier may remain on the device. Reinstalling creates a new installation reference.</p>
     </section>
 
     <section>
+      <h2>Google Play purchases (Android)</h2>
+      <p>On Android, Google Play processes your payment for RePasito Pro. The developer does not receive your payment-card details or Google Account credentials. To unlock Pro, the app sends the purchase token issued by Google Play to a protected Firebase service. That service asks Google Play for the subscription’s current state, acknowledges new purchases, and stores a one-way hash of the token together with the product, subscription state, expiry time, and verification time. The raw purchase token is not stored. Google Play also sends the service real-time notifications about subscription changes, such as renewals, cancellations, and refunds. The service then checks the subscription state with Google again. Firebase anonymous authentication and Firebase App Check, using Google Play Integrity, verify that these requests come from a genuine copy of the app.</p>
+      <p>The app keeps the verified subscription state on the device for at most 12 hours or until the subscription expires, whichever comes first, and does not include it in Android backups. Purchase verification records are kept while they are needed to restore and verify your subscription. To delete them, contact the developer as described below. Deleting these records does not cancel a Google Play subscription; manage or cancel it in the Google Play Store. Verification rate-limit records expire after about 24 hours.</p>
+    </section>
+
+    <section>
       <h2>Optional feedback</h2>
-      <p>If you choose to send feedback in the app, RePasito sends your feedback category and message, a random submission identifier, app version and build, and iOS version to a protected Firebase service. Firebase creates an anonymous user identifier and uses Apple App Attest through Firebase App Check to verify that the request comes from a genuine copy of the app.</p>
+      <p>If you choose to send feedback in the app, RePasito sends your feedback category and message, a random submission identifier, app version and build, and iOS or Android version to a protected Firebase service. Firebase creates an anonymous user identifier and uses Firebase App Check to verify that the request comes from a genuine copy of the app. On iPhone, App Check uses Apple App Attest. On Android, it uses Google Play Integrity.</p>
       <p>The feedback message and technical context are delivered to a private GitHub issue used by the developer to respond to bugs and product requests. Do not include information in the message that you do not want the developer to receive. The anonymous Firebase user identifier is not included in the GitHub issue.</p>
     </section>
 
     <section>
-      <h2>Apple services and purchases</h2>
+      <h2>Apple services and purchases (iPhone)</h2>
       <p>If you choose Apple Music, Apple processes your authorization, search, and playback requests under Apple’s privacy policy. If you view or purchase RePasito Pro, Apple processes the transaction and provides StoreKit product, transaction, and entitlement information to the app. RePasito uses that information to show localized offers and unlock Pro features. The developer does not receive your payment-card or Apple Account credentials.</p>
     </section>
 
     <section>
       <h2>Storage and deletion</h2>
-      <p>App settings and imported practice media remain in RePasito on your device until you remove them or delete the app. Deleting the app removes its app-local files; some Keychain values may remain on the device. Clips previously saved to Photos must be deleted separately from the Photos app.</p>
-      <p>You can revoke camera, microphone, Photos, or Apple Music access at any time in iOS Settings.</p>
+      <p>App settings and imported practice media remain in RePasito on your device until you remove them or delete the app. On iPhone, deleting the app removes its app-local files; some Keychain values may remain on the device. On Android, uninstalling the app removes its app data, and RePasito’s app data is not included in Android backups or device transfers. Clips previously saved to Photos (iPhone) or Movies/RePasito (Android) must be deleted separately from your gallery.</p>
+      <p>You can revoke camera, microphone, Photos, or Apple Music access at any time in iOS Settings. On Android, you can revoke camera and microphone access in Settings → Apps → RePasito → Permissions.</p>
       <p>Backend rate-limit records derived from the anonymous Firebase identifier expire after approximately 25 hours. Feedback audit records, which contain category, app and iOS versions, delivery status, and the created issue reference—but not the feedback text or Firebase identifier—expire after approximately 30 days. Private GitHub feedback issues are retained while needed to investigate and act on the feedback. Firebase Analytics event-level retention is controlled by the Firebase/Google Analytics project settings; aggregated reports may be retained longer.</p>
-      <p>To request deletion of submitted feedback or associated service data, contact the developer using the method below and provide enough detail to locate the submission. Deleting the app stops app-originated requests but does not automatically delete feedback you previously chose to submit or stop Apple subscription notifications.</p>
+      <p>To request deletion of submitted feedback, purchase verification records, or associated service data, contact the developer using the method below and provide enough detail to locate the submission or purchase. Deleting the app stops app-originated requests but does not automatically delete feedback you previously chose to submit, and it does not stop subscription notifications from Apple or Google Play.</p>
     </section>
 
     <section>
       <h2>Service providers and international processing</h2>
-      <p>Google Firebase provides analytics, anonymous authentication, App Check, cloud functions, and backend storage. GitHub hosts private feedback issues. Apple provides StoreKit, Apple Ads attribution, subscription notifications, Apple Music, and device attestation. These providers process data under their own privacy terms, and service data may be processed in the United States or other countries where they operate.</p>
-      <p>Learn more in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>, and <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
+      <p>Google Firebase provides analytics, anonymous authentication, App Check, cloud functions, and backend storage. Google Play provides billing, subscription notifications, and Play Integrity on Android. YouTube provides video search and playback. GitHub hosts private feedback issues. Apple provides StoreKit, Apple Ads attribution, subscription notifications, Apple Music, and device attestation on iPhone. These providers process data under their own privacy terms, and service data may be processed in the United States or other countries where they operate.</p>
+      <p>Learn more in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>, and <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
     </section>
 
     <section>
@@ -73,7 +85,7 @@
 
     <section>
       <h2>Changes to this policy</h2>
-      <p>If the app’s data practices change, this policy and the App Store privacy disclosure will be updated before the change is released.</p>
+      <p>If the app’s data practices change, this policy and the App Store and Google Play privacy disclosures will be updated before the change is released.</p>
     </section>
 
     <section class="card">
